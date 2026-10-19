@@ -30,9 +30,6 @@ nav ul{
     padding : 0px;
     display : flex; /*가로 메뉴 제작시 활용*/
 }
-nav li{
-
-}
 nav a{
     display: block;
     padding : 15px 10px;
@@ -40,23 +37,21 @@ nav a{
     text-decoration: none; /*밑줄없애기*/}
     nav a:hover{background-color: #ff9800;}
 
-/*링크의 4가지 상태 (순서 : L-V-H-A*/
+/*링크의 4가지 상태 (순서 : L-V-H-A)*/
 .content a:link{
 color: blue;
 }
-
 .content a:visited{
     color:purple;
 }
-
 .content a:hover{
     color:red;
     text-decoration:underline wavy;
 }
-
 .content a:active{
     color: orange;
 }
+
 
 /*버튼모양링크*/
 a.btn {
@@ -78,3 +73,8 @@ min-height:500px;
 padding:30px;
 border-bottom: 1px solid #ccc;
 }
+
+/*선택된 섹션에 배경색을 도드라지게 보이기 */
+
+section:target{
+background: #e1dbc1;}
