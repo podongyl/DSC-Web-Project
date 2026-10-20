@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model_실습5</title>
+</head>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0px;
+        padding: 30px;
+    }
+
+    /*dic 박스 공통 스타일*/
+    /*clasd명은 두 개 이상 적용 가능 class="별칭1 별칭2"*/
+    div.Box {
+        width: 375px;
+        height: 100px;
+        /*border: 1px solid black;*/
+        color: black;
+        font-size: 16px;
+        text-align: center;
+        line-height: 60px;
+        margin: 20px auto;
+
+    }
+
+    div.Box1 {
+        padding: 10px;
+        border: 2px solid #1a5276;
+        background-color: #3498db;
+    }
+
+    div.Box2 {
+        padding: 20px;
+        border: 4px solid #1922b2;
+        background-color: #e74c3c;
+    }
+
+    div.Box3 {
+        padding: 30px;
+        border: 6px solid #128449;
+        background-color: #2ecc71;
+    }
+</style>
+
+<body>
+    <h2 style="text-align: center;">
+        &#128230; BOX Model 종합실습
+    </h2>
+
+    <div class="Box Box1"> padding:10px / border:2px solid</div>
+    <div class="Box Box2"> padding:20px / border:4px solid</div>
+    <div class="Box Box3"> padding:30px / border:6px solid</div>
+</body>
+
+</html>

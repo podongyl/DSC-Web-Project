@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model_실습2</title>
+</head>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        /*틀 안에 구겨 넣겠다*/
+    }
+
+    div.box2 {
+        width: 200px;
+        height: 100px;
+        background-color: #e74c3c;
+        color: white;
+        /*padding 적용 후 비교*/
+        padding: 20px;
+        /*content-box 속성과 border box 번갈아 적용하기, 크기값 따로 주고 싶은 박스에 개별로 가능*/
+        /*F12번 통해서 괄호 크기 확인*/
+        box-sizing: content-box;
+        margin-bottom:20px;
+    }
+
+    div.box2-1 {
+       /* margin-top: 20px;*/
+        width: 200px;
+        height: 100px;
+        background-color: blue;
+        color: white;
+    }
+</style>
+
+
+<body>
+
+    <div class="box2">Padding 적용 박스2</div>
+    <div class="box2-1">Padding 적용 박스2-1</div>
+
+</body>
+
+</html>
