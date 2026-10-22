@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_실습2_relative</title>
+</head>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 20px;
+        magin: 5px;
+    }
+
+    /*부모(parent) 박스 스타일 적용*/
+
+    div.parent {
+        border: 2px solid #dbc3c7;
+        width: 300px;
+        height: 200px;
+        background-color: #ecf0f1;
+        margin: 20px auto;
+        /*부모에 대해 속성을 현 위치값(0.0)에 해당*/
+        position: relative;
+
+    }
+
+    div.child {
+        /*자식들에 잡아주는*/
+        width: 60px;
+        height: 60px;
+        color: #333;
+        font-size: 12px;
+        text-align: center;
+        line-height: 60px;
+        border-radius: 5px;
+        position: absolute;
+        color: white;
+    }
+
+    div.top-left {
+        top: 0px;
+        left: 0px;
+        background-color: #3498db;
+    }
+
+    div.top-right {
+        top: 0px;
+        right: 0px;
+        background-color: #e74c3c;
+    }
+
+    div.bottom-left {
+        bottom: 0px;
+        left: 0px;
+        background-color: #2ecc71;
+    }
+
+    div.bottom-right {
+        bottom: 0px;
+        right: 0px;
+        background-color: #f39c12;
+    }
+
+    div.center {
+        /*요소(태그)를 정중앙으로 이동하고자 할 때 공식*/
+        top: 50%;
+        left: 50%;
+        background-color: #9b59b6;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+<body>
+    <h2> absolute위치 확인하기</h2>
+    <div class="parent">
+        <div class="child top-left"> 좌상 </div>
+        <div class="child top-right"> 우상 </div>
+        <div class="child center"> 중앙 </div>
+        <div class="child bottom-left"> 좌하 </div>
+        <div class="child bottom-right"> 우하 </div>
+    </div>
+</body>
+
+</html>
